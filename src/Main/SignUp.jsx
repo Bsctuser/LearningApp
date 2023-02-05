@@ -1,4 +1,4 @@
-import { Card, Button, Input, Typography, Form } from 'antd';
+import { Card, Button, Input, Typography, Form, Divider } from 'antd';
 import ShareIcon from '../assets/shareicon.png';
 import { MailOutlined, PhoneOutlined, LockOutlined } from '@ant-design/icons';
 const { Title , Link } = Typography;
@@ -7,7 +7,8 @@ const SignUp = () => (
     style={{
       width: 471,
       height:570,
-      border: 'red',
+      borderRadius: 30,
+      borderColor: 'black',
     }}
   >
     <img  src={ShareIcon} />
@@ -33,16 +34,18 @@ const SignUp = () => (
       rules={[
         {
           required: true,
+          message: 'Please input your Email ID!',
         },
       ]}
     >
-      <Input size="large" placeholder="User name" suffix={<PhoneOutlined/>}/>
+        <Input size="large" placeholder="Phone Number" suffix={<PhoneOutlined/>}/>
     </Form.Item>
     <Form.Item
       name={['user', 'password']}
       rules={[
         {
           required: true,
+          message: 'Please input your Phone Number!',
         },
       ]}
     >
@@ -61,10 +64,12 @@ const SignUp = () => (
     <Form.Item
     >
       <Button type="primary" htmlType="submit">
-        Submit
+        Sign Up
       </Button>
     </Form.Item>
   </Form>
+  <Divider style={{width:50}}/>
+  <div>Already have an account? <a>Login Now</a></div>
   </Card>
 );
 export default SignUp;
