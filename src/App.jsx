@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import CustomCard from './UI/Card'
+import SignUp from './Main/SignUp'
 
 function App() {
 
   return (
-    <div><CustomCard/></div>
+    <div><SignUp/></div>
   )
 }
 
