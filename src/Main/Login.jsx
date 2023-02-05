@@ -2,12 +2,11 @@
 import { Card, Divider } from 'antd';
 import { icons } from 'antd/es/image/PreviewGroup';
 const { Meta } = Card;
-import { Input, Space, Button, Checkbox, Form ,Alert} from 'antd';
+import { Input, Space, Button, Checkbox, Form ,Alert, Typography} from 'antd';
 
 import ShareIcon from '../assets/shareicon.png';
 import { UserOutlined } from '@ant-design/icons'
-import Title from 'antd/es/skeleton/Title';
-
+const { Title , Link } = Typography;
 
 const Login = () => (
   <Card
