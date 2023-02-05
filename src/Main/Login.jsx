@@ -22,7 +22,7 @@ const Login = () => (
 
   >
     <img src={ShareIcon} style={{ width: 118, height: 92 }} />
-    <Title
+    <Title level={3}>LOGIN</Title>
     <h3>Sign in to our account</h3>
     <Form >
       
