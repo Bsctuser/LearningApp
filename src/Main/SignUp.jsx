@@ -1,7 +1,8 @@
 import { Card, Button, Input, Typography, Form, Divider } from 'antd';
 import ShareIcon from '../assets/shareicon.png';
 import { MailOutlined, PhoneOutlined, LockOutlined } from '@ant-design/icons';
-const { Title , Link } = Typography;
+const { Title } = Typography;
+import {Link} from 'react-router-dom'
 const SignUp = () => (
   <Card 
     style={{
@@ -69,7 +70,7 @@ const SignUp = () => (
     </Form.Item>
   </Form>
   <Divider style={{width:50}}/>
-  <div>Already have an account? <a>Login Now</a></div>
+  <div>Already have an account? <Link to="/login">Login Now</Link></div>
   </Card>
 );
 export default SignUp;
