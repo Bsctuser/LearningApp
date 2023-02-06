@@ -69,9 +69,6 @@ const Login = () => {
             <Button type='primary' htmlType='submit'  style={{width:200}}>Login</Button>
             <Divider style={{width:50}} orientation='center' >OR</Divider>
             <div>Not a member?<Link to="/signup">Sign up now</Link></div>
-          
-    
-    
         </Form>
         
       </Card>);
